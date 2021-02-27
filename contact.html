@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinomonster</title>
+    <meta name="descriprion" content="Киномонстр - это портал о кино">
+    <meta name="keywords" content="фильмы, фильмы онлайн, hd">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">КиноМонстр</a></h1>
+                    <h2>Кино - наша страсть!</h2>
+                </div>
+            </div>
+
+            <div class="menubar">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="films.html">Фильмы</a></li>
+                    <li><a href="">Сериалы</a></li>
+                    <li><a href="rating.html">Рейтинг фильмов</a></li>
+                    <li class="selected"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="site_content">
+
+            <div class="sidebar_conteiner">
+
+                <div class="sidebar">
+                    <h2>Поиск</h1>
+                        <form method="post" action="#" id="search_form">
+                            <input type="search" name="search_field" placeholder="ваш запрос">
+                            <input type="submit" class="btn" value="найти">
+                        </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Вход</h2>
+                    <form method="post" action="#" id="login">
+                        <input type="text" name="login_field" placeholder="логин">
+                        <input type="password" name="password_field" placeholder="пароль">
+                        <input type="submit" class="btn" value="вход">
+                        <div class="lables_passreg_text">
+                            <span><a href="#">забыли пароль?</a></span> | <span><a href="№">регистрация</a></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Новости</h2>
+                    <span>29.01.2021</span>
+                    <p>Мы запустили расширенный поиск</p>
+                    <a href="#">читать</a>
+
+                </div>
+
+                <div class="sidebar">
+                    <h2>Рейтинг фильмов</h2>
+                    <ul>
+                        <li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
+                        <li><a href="#">Матрица</a><span class="rating_sidebar">8.0</span></li>
+                        <li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
+                        <li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="content">
+            <h1>Контакты</h1>
+            <p class="portal">Отправьте ваш отзыв о портале КиноМонстр</p>
+            <div class="contact">
+                
+                <form method="post" action="#" id="contact_input">
+                    <input type="text" name="contact_name" placeholder="ваше имя">
+                    <input type="email" name="contact_email" placeholder="ваш email">
+                    <textarea name="contact_text" id="" ></textarea>
+                    <input type="submit"  value="отправить">
+                </form>
+            
+            </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>
+                <a href="index.html">Главная</a> |
+                <a href="films.html">Фильмы</a> |
+                <a href="#">Сериалы</a> |
+                <a href="rating.html">Рейтинг фильмов</a> |
+                <a href="contact.html">Контакты</a> |
+
+            </p>
+            <p>wh-db.comspan <span class="footer_number">2015</span></p>
+
+        </div>
+        <!--   .header{
+			background-color:#257965 ;
+			min-width: 100%;
+			height: 20%;
+			text-align: center;
+		}
+		body{
+			color: #257965;
+		}
+		.logo{
+			width: 100%;
+		}
+		.site_content{
+			width: 100%;
+		}
+		.menubar{
+			width: 100%;
+			height: 100%;
+		}
+		.content{
+			width: 100%;
+			text-align: center;
+		}
+		.site_content{
+			width: 100%;
+			text-align: center;
+		}
+		.sidebar_conteiner{
+			display: none;
+		}
+		.footer{
+			display: none;
+		}
+		ul.menu{
+			float: none;
+		}
+		ul.menu li{
+			margin: 0;
+			padding: 0;
+			float: none;
+		}
+		.logo h1{
+			font: normal 235% 'century gothic', arial, sans-serif;
+	
+		}
+		.logo h2{
+			font: normal 100% 'century gothic', arial, sans-serif;
+			color: white;
+			
+		}
+		.content h1,h2{
+			font: normal 100% 'century gothic', arial;
+		}
+		.films_block img{
+			width: 43%;
+		}
+		.posts_content p{
+			line-height: 1.5em;
+			font-size: 208%;
+			padding: 3%;
+		}
+		.posts p {
+			font-size: 120%;
+		}
+		/*films page*/
+		.info_film{
+			float: none;
+			height: 100%;
+		}
+		.info_film img{
+			width: 90%;
+			margin-bottom: 5%;
+		}
+		.button{
+			float: none;
+			text-align: center;
+		}
+		/*rating page*/
+		table{
+			display: block;
+		}
+		th{
+			font-size: 75%;
+			
+		}
+		td{
+			padding: 0;
+			margin: 0;
+			font-size: 95%;
+			text-align: left;
+		}
+		/*show page*/
+	
+		iframe{
+			width: 80%;
+			height: 100%;
+		}
+		.description_film{
+			width: 90%;
+			text-align: left;
+			margin-left: 2%;
+		}
+		.description_film img{
+			float: none;
+			width: 73%;
+			display: block;
+			margin:0;
+			padding: 0;
+			margin-left: 11%;
+	
+			margin-bottom: 7%;
+		}
+		.reviws{
+			text-align: left;
+			width: 96%;
+		}
+		.send intup[type="text"]{
+			width: 80%;
+		}
+		.send textarea{
+			width: 80%;
+		}                          -->
+        
+
+</body>
+
+</html>
